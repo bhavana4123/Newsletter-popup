@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    height: 100vh;
+    background-color: #7c3af8;
+}
+
+.button {
+    background-color: aliceblue;
+    position: relative;
+    padding: 15px;
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+.button:hover{
+    letter-spacing: 0.1rem;
+}
+
+#NewsLetter {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aliceblue;
+    z-index: 1000;
+    width: 450px;
+    padding: 80px 50px 50px;
+    border-radius: 10px;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+#NewsLetter.active{
+    visibility: visible;
+    top: 50%;
+
+}
+
+#NewsLetter h2 {
+    text-align: center;
+    margin: 20px 10px;
+    color: #5c4800;    
+}
+
+#NewsLetter p {
+    text-align: center;
+    margin: 20px 10px;
+}
+
+#NewsLetter .box {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input, button {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    outline: none;
+    font: 1rem;
+    font-family: serif;
+}
+
+button{
+    border: none;
+    width: 150px;
+    letter-spacing: 0.1rem;
+    background-color: #7c3af8;
+    color: aliceblue;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    cursor: pointer;
+    top : 15px;
+    right: 20px;
+}
